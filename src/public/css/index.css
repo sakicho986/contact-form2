@@ -1,0 +1,150 @@
+.header__inner {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.header__logo {
+    color: #704214;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+    padding-top: 30px;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+    color: #704214;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #704214;
+    font-family: "Merriweather", serif;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #704214;
+}
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: red;
+}
+
+.form__label--item {
+    color: #704214;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--name input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 47px;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+    color: #704214;
+
+    appearance: none;
+}
+
+.form__input--tel input {
+    padding: 10px;
+    width: 140px;
+    margin-right: 47px;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+    color: #704214;
+
+    appearance: none;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+    color: #704214;
+
+    appearance: none;
+}
+
+.form__input-radio {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 180px;
+    accent-color: #704214;
+}
+
+.male,
+.female,
+.others {
+    position: relative;
+    right: 35px;
+}
+
+select {
+    background-color: #EEEEEE;
+    color: #704214;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+    padding: 10px;
+    width: 300px;
+    margin-right: 300px;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #704214;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+
+}
