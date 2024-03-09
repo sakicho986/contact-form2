@@ -1,18 +1,16 @@
-.header {
-    background: #000;
-}
-
 .header__inner {
-    margin: 0 auto;
-    padding: 20px 15px;
-    max-width: 1230px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
 }
 
 .header__logo {
-    color: #fff;
+    color: #704214;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+    font-family: "Merriweather", serif;
+    padding-top: 30px;
 }
 
 .confirm__content {

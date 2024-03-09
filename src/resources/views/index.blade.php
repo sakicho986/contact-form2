@@ -32,6 +32,7 @@
         <h2>Contact</h2>
       </div>
       <form class="form" action="/contacts/confirm" method="post">
+        @csrf
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">お名前</span>
@@ -39,8 +40,8 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--name">
-              <input type="text" name="name" placeholder="例:山田" />
-              <input type="text" name="name" placeholder="例:太郎" />
+              <input type="text" name="last_name" placeholder="例:山田" />
+              <input type="text" name="first_name" placeholder="例:太郎" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -73,7 +74,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="email" name="email" placeholder="test@example.com" />
+              <input type="email" name="email" placeholder="例:test@example.com" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -89,7 +90,7 @@
             <div class="form__input--tel">
               <input type="tel" name="tel" placeholder="080" />-
               <input type="tel" name="tel" placeholder="1234" />-
-              <input type="tel" name="tel" placeholder="5678" />
+              <input type="tel"  name="tel" placeholder="5678" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -116,7 +117,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="address" placeholder="例:千駄ヶ谷マンション101" />
+              <input type="text" name="building" placeholder="例:千駄ヶ谷マンション101" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -130,9 +131,9 @@
           </div>
           <div class="form__group-select">
             <div class="form__input--select">
-              <select name="contact-select">
+              <select name="content">
                 <option value="" selected>選択してください</option>
-                <option value="商品のお届けについて">商品のお届けについて</option>
+                <option value=" 商品のお届けについて">商品のお届けについて</option>
                 <option value="商品の交換について">商品の交換について</option>
                 <option value="商品トラブル">商品トラブル</option>
                 <option value="ショップへのお問い合わせ">ショップへのお問い合わせ</option>
@@ -150,7 +151,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--textarea">
-              <textarea name="content" placeholder="お問い合わせ内容をご記載ください"></textarea>
+              <textarea name="detail" placeholder="お問い合わせ内容をご記載ください"></textarea>
             </div>
           </div>
         </div>
