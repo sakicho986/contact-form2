@@ -41,7 +41,6 @@
     padding: 15px;
     width: 20%;
     border-bottom: 1px solid #ddd;
-    background-color: #eee;
     font-weight: bold;
 }
 
@@ -68,11 +67,17 @@
 
 .form__button-submit {
     padding: 10px;
-    width: 30%;
+    width: 20%;
     height: 50px;
     border: none;
     border-radius: 3px;
-    background: #000;
+    background: #704214;
     color: #fff;
     cursor: pointer;
+}
+
+.form__button-back {
+    color:#704214;
+    text-decoration: underline;
+    text-decoration-color: #704214;
 }

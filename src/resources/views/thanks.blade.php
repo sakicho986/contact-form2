@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+@extends('layouts.app')
 
 <head>
   <meta charset="UTF-8" />
@@ -8,6 +9,9 @@
   <title>Contact Form</title>
   <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/thanks.css') }}" />
+  @section('css')
+  <link rel="stylesheet" href="{{ asset('css/thanks.css') }}">
+  @endsection
 </head>
 
 <body>
@@ -19,12 +23,15 @@
     </div>
   </header>
 
+  @section('content')
+
   <main>
     <div class="thanks__content">
       <div class="thanks__heading">
         <h2>お問い合わせありがとうございます</h2>
       </div>
     </div>
+    @endsection
   </main>
 </body>
 

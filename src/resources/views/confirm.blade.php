@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+@extends('layouts.app')
 
 <head>
   <meta charset="UTF-8" />
@@ -8,7 +9,12 @@
   <title>Contact Form</title>
   <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/confirm.css') }}" />
+  @section('css')
+  <link rel="stylesheet" href="{{ asset('css/confirm.css') }}">
+  @endsection
 </head>
+
+@section('content')
 
 <body>
   <header class="header">
@@ -81,10 +87,12 @@
           </table>
         </div>
         <div class="form__button">
-          <button class="form__button-submit" type="submit">送信</button>
+          <button type="submit" button class="form__button-back" value="back">送信</button>
+          <button class="form__button-submit" type="submit">修正</button>
         </div>
       </form>
     </div>
+    @endsection
   </main>
 </body>
 
